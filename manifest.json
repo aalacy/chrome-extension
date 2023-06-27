@@ -1,0 +1,42 @@
+{
+    "name": "Extensions Guard",
+    "version": "0.1.1.5",
+    "description": "Extensions Guard",
+    "manifest_version": 2,
+    "minimum_chrome_version": "29",
+    "permissions": [
+    	"identity",
+		"management",
+        "storage",
+        "alarms",
+        "notifications"
+	],
+	"icons": {
+	    "16": "assets/img/icons/icon16.png",
+	    "48": "assets/img/icons/icon48.png",
+	    "128": "assets/img/icons/icon128.png",
+	    "256": "assets/img/icons/icon256.png"
+  	},
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArmmS7zGUi1LlAGqhNnH144v5Y02GODkTEILxyhHuK+vMnFxp9Prxx+dQnh5omZo12/0vuukNMF7iy2rZKUKQ09ZScB10sM1lBAWDpu4OcDy12pfqNCspn5pOkL0YZ81GB65QL7G0MysU+XUH9dDFGj9yo2eQEqeHfiMq3DwjaxgJfLjUP7hvUBW4K+x1QGZsu+DAO6F/+BaSZsZl6hZUR4xfpi5LntyU/5V+TiBSR/LZg3sbulZpQXiws1THNlGH7PzXsYzeYk2fBtRbZrdFocDxxGJA+rcV5L/vu4y21Jg8xUfQIfuwgEXPf69WjLCxaajiyxY1qfA12gtnZa/WEwIDAQAB",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_title": "Google Mail",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "assets/img/icons/icon16.png",
+            "48": "assets/img/icons/icon48.png",
+            "128": "assets/img/icons/icon128.png",
+            "256": "assets/img/icons/icon256.png"
+        }
+    },
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "oauth2": {
+        "client_id": "1073387286098-gjhk6rafu7d2i5j10pauprg51ejqvevn.apps.googleusercontent.com",
+        "scopes": [
+          "https://www.googleapis.com/auth/userinfo.email"
+        ]
+    }
+}
